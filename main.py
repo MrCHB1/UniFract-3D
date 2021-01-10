@@ -58,7 +58,7 @@ float getDist(vec3 p) {
         if (m > 4.0)
             break;
     }
-    return max(0.25*log(m)*sqrt(m)/dz,p.z);
+    return 0.25*log(m)*sqrt(m)/dz;
 }
 
 float rayMarch(vec3 ro, vec3 rd) {
